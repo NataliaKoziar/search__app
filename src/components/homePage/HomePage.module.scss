@@ -1,0 +1,19 @@
+.wrapper{
+  padding: 50px 68px 63px 68px;
+  background-color: white;
+  .results{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 20px 8px;
+    border-bottom: 2px solid #EAEAEA;
+    p{
+      box-sizing: content-box!important;
+    }
+      }
+  .characters{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

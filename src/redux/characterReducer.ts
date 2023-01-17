@@ -4,6 +4,7 @@ import { actionTypes, TypeOfAction } from "./action/actionTypes";
 
 const initialState: IState ={
     characters:[],
+    searchValue:'',
     loading:false
 }
 
@@ -14,7 +15,14 @@ export const CharactersReducer = (state= initialState, action:TypeOfAction):ISta
                 ...state,
                 characters: action.payload
             }
-            case actionTypes.LOADING:
+        case actionTypes.CHANGE_SEARCH_VALUE:
+            return {
+                ...state,
+                searchValue: action.payload
+
+            };
+        
+        case actionTypes.LOADING:
             return {
                 ...state,
                 loading: action.payload

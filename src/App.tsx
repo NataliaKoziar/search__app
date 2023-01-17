@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
-import { CardComponent } from './components/CardComponent';
+import { Route, Routes } from "react-router-dom"
+import { ArticlePage } from './components/articlePage/ArticlePage';
+import { HomePage } from './components/homePage/HomePage';
 
 function App() {
   return (
     <div className="App">
-     <CardComponent/>
+      <Routes>
+      <Route path={'/'} element={<HomePage />} />
+      <Route path={'/articles/:title'} element={<ArticlePage />}/>
+    </Routes>
     </div>
   );
 }
