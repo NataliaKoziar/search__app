@@ -1,6 +1,7 @@
 .wrapper{
   padding: 50px 68px 63px 68px;
   background-color: white;
+  max-width: 1440px;
   .results{
     font-size: 1rem;
     font-weight: 700;
@@ -13,7 +14,7 @@
   .characters{
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
   }
 }
